@@ -1,6 +1,6 @@
-package org.henrique;
+package org.henrique.model;
 
-public class Filme {
+public class Tituto {
 
     private String nome;
     private int anoDeLancamento;
@@ -54,11 +54,11 @@ public class Filme {
     }
 
 
-    public void exibirFilme() {
+    public void exibirTituto() {
         System.out.println("Nome: " + nome + " Número de Avaliações: " + numeroDeAvaliacoes + " Duração: " + duracaoMinutos);
     }
 
-    public void avaliarFilme(double nota) {
+    public void avaliarTitulo(double nota) {
         avaliacao += nota;
         numeroDeAvaliacoes++;
     }
@@ -66,6 +66,4 @@ public class Filme {
     public double pegarMedias() {
         return avaliacao/numeroDeAvaliacoes;
     }
-
-
 }
